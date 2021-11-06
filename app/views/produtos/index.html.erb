@@ -1,0 +1,7 @@
+<div>
+ <div class="flex">
+  <% @produtos.each do |produto| %>
+    <li><%= produto.nome %></li>
+    <li><%= produto.tamanho %></li>
+  <% end %>
+</div>
