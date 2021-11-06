@@ -4,10 +4,12 @@
     <%= f.text_field :nome %>
     <%= f.label :cor %>
     <%= f.text_field :cor %>
-    <%= f.label :tamanho %>
+    <%= f.label :tam %>
     <%= f.text_field :tamanho %>
     <%= f.label :valor %>
     <%= f.text_field :valor%>
-    <%= f.submit %>
+    <%= f.file_field :photo %>
+    <div style="padding-top:30px">
+    <%= f.submit "Criar produto"%></div>
   <% end %>
 </div>

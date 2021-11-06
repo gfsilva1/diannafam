@@ -1,7 +1,25 @@
-<div>
- <div class="flex">
-  <% @produtos.each do |produto| %>
-    <li><%= produto.nome %></li>
-    <li><%= produto.tamanho %></li>
-  <% end %>
+
+
+<div class="container">
+  <div class="card-category">
+    <div class="card">
+
+        <% @produtos.each do |produto| %>
+            <div class="wrapper">
+              <div class="product-img">
+                <% if produto.photo.attached? %>
+                  <%= cl_image_tag produto.photo.key, height: 120, width: 250, crop: :fill %>
+                <% else%>
+                  <h1></h1>
+                <%end%>
+                  <h1><%= produto.nome %></h1>
+                    <p>Descrição: <%= produto.tamanho %></p>
+                    <p>Preço R$<%= produto.valor %></p>
+                <% end %>
+              </div>
+            </div>
+        </div>
+    </div>
+    <%= link_to "Início", root_path %>
+  </div>
 </div>

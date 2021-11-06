@@ -1,3 +1,11 @@
-<h2><%= @produto.nome %></h2>
-<p><%= @produto.cor %></p>
-<p><%= @produto.tamanho %></p>
+<div class="card-category">
+    <%= cl_image_tag @produto.photo.key, height: 300, width: 400, crop: :fill %>
+    <h1><%= @produto.nome %></h1>
+    <h2>Descrição:<%= @produto.cor %>,<%= @produto.tamanho %>
+    <h2>Preço:R$<%= @produto.valor %></h2>
+    <%= link_to "Lista", produtos_path %>
+    <%= link_to "Deletar",
+            produto_path(@produto),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+</div>
