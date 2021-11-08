@@ -1,25 +1,22 @@
 
 
 <div class="container">
-  <div class="card-category">
-    <div class="card">
-
-        <% @produtos.each do |produto| %>
-            <div class="wrapper">
-              <div class="product-img">
-                <% if produto.photo.attached? %>
-                  <%= cl_image_tag produto.photo.key, height: 120, width: 250, crop: :fill %>
-                <% else%>
-                  <h1></h1>
-                <%end%>
-                  <h1><%= produto.nome %></h1>
-                    <p>Descrição: <%= produto.tamanho %></p>
-                    <p>Preço R$<%= produto.valor %></p>
-                <% end %>
-              </div>
-            </div>
-        </div>
-    </div>
-    <%= link_to "Início", root_path %>
-  </div>
+  <div class="card-trip">
+  <% @produtos.each do |produto| %>
+    <% if produto.photo.attached? %>
+      <%= cl_image_tag produto.photo.key, height: 321, width: 250, crop: :fill %>
+    <% else%>
+      <img src="<%=basket_array.sample%>" height="321" width="250">
+    <%end%>
+   <div class="card-trip-infos">
+      <div>
+       <%= produto.nome %></h2>
+       <p>Descrição: <%= produto.tamanho %></p>
+      </div>
+         <h2 class="card-trip-pricing">
+                <%= produto.valor %></h2>
+  <% end %>
+          <img src="assets/logo.jpg" alt="" class="card-trip-user avatar-bordered"/>
+   </div>
+      <%= link_to "Início", root_path %>
 </div>

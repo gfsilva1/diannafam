@@ -8,6 +8,7 @@ class ProdutosController < ApplicationController
 
   def new
     @produto=Produto.new
+
   end
 
   def show
@@ -16,8 +17,10 @@ class ProdutosController < ApplicationController
 
   def create
     @produto = Produto.new(produto_params)
-    @produto.save
-    redirect_to produto_path(@produto)
+    if @produto.save
+      redirect_to @produto
+
+    end
   end
 
   def destroy
