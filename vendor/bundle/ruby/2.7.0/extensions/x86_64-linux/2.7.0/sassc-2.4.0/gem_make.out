@@ -1,12 +1,12 @@
-current directory: /home/gfsilva/code/gfsilva1/projects/diana/diana/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-/home/gfsilva/.rvm/rubies/ruby-2.7.3/bin/ruby -I /home/gfsilva/.rvm/rubies/ruby-2.7.3/lib/ruby/site_ruby/2.7.0 -r ./siteconf20211106-1842-1ysz6rr.rb extconf.rb
+current directory: /home/gfsilva/code/gfsilva1/projects/dianaback/diannafam/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+/home/gfsilva/.rvm/rubies/ruby-2.7.3/bin/ruby -I /home/gfsilva/.rvm/rubies/ruby-2.7.3/lib/ruby/2.7.0 -r ./siteconf20220707-1591-1lj02tm.rb extconf.rb
 creating Makefile
 
-current directory: /home/gfsilva/code/gfsilva1/projects/diana/diana/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\= clean
+current directory: /home/gfsilva/code/gfsilva1/projects/dianaback/diannafam/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+make "DESTDIR=" clean
 
-current directory: /home/gfsilva/code/gfsilva1/projects/diana/diana/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\=
+current directory: /home/gfsilva/code/gfsilva1/projects/dianaback/diannafam/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
-current directory: /home/gfsilva/code/gfsilva1/projects/diana/diana/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\= install
-/usr/bin/install -m 0755 libsass.so ./.gem.20211106-1842-1vv24al/sassc
+current directory: /home/gfsilva/code/gfsilva1/projects/dianaback/diannafam/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+make "DESTDIR=" install
+/usr/bin/install -m 0755 libsass.so ./.gem.20220707-1591-v7y18/sassc
